@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="alarm-tone" src="song/Alarm-clock-ring-sound.mp3" controls></audio>
+    <div class="display-flex-col-center" id="main-box">
+        <div>
+            <p id="heading">Multiple Timers App</p>
+        </div>
+        <div id="timer-div" class="timer-div">
+            <div class="display-flex-row-center gap-2rem timer-box">
+                <p id="set-time">Set Time :</p>
+                <div id="time-count" class="display-flex-row-center">
+                    <p id="hour" contenteditable>hh</p>
+                    <p>:</p>
+                    <p id="min" contenteditable=>mm</p>
+                    <p>:</p>
+                    <p id="sec" contenteditable>ss</p>
+                </div>
+                <div id="set-btn">Set</div>
+            </div>
+        </div>
+        <div id="current-timers-btn">Current Timers</div>
+        <div id="timers-list" class="display-flex-col-center gap-2rem">
+            <div id="current-timers">You have no timers currently!</div>
+            
+            <!-- <div class="timer-div">
+            <div class="display-flex-row-center gap-2rem timer-box">
+                <p id="set-time">Set Time :</p>
+                <div id="time-count" class="display-flex-row-center">
+                    <p id="hour" contenteditable="true">00</p>
+                    <p>:</p>
+                    <p id="min" contenteditable="true">01</p>
+                    <p>:</p>
+                    <p id="sec" contenteditable="true">29</p>
+                </div>
+                <div id="set-btn">Set</div>
+            </div>
+        </div> -->
+            <!-- <div class="timer-div-finished">
+            <div class="display-flex-row-center gap-2rem timer-box-finished">
+                <p id="set-time-finished">Set Time :</p>
+                <div id="time-count-finished" class="display-flex-row-center">
+                    <p>Timer is Up!</p>
+                </div>
+                <div id="set-btn-finished">Stop</div>
+            </div>
+        </div>
+        <div class="timer-div">
+            <div class="display-flex-row-center gap-2rem timer-box">
+                <p id="set-time">Set Time :</p>
+                <div id="time-count-active" class="display-flex-row-center">
+                    <p id="hour">00</p>
+                    <p>:</p>
+                    <p id="min">01</p>
+                    <p>:</p>
+                    <p id="sec">29</p>
+                </div>
+                <div id="set-btn">Delete</div>
+            </div>
+        </div> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
